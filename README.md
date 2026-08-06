@@ -12,7 +12,8 @@ so nothing standard gets forgotten.
   is easy to forget when scaffolding a repo by hand.
 - **`.github/workflows/sync-project-status.yml`** — keeps the Project item's
   `Status` field aligned with issue lifecycle (`opened`, `reopened`,
-  `transferred`, `closed`) so the Project can stay the operative overview.
+  `transferred`, `closed`) and sets `Product` from the repo name (`atlas-*` →
+  `Atlas`, `portic-*` → `Portic`) so the Project can stay the operative overview.
 - **`.gitignore`** — sensible defaults.
 - **`LICENSE.PLACEHOLDER`** — a deliberate reminder that the repo is **unlicensed
   until you add one**. It is intentionally *not* a real `LICENSE`, so a generated
