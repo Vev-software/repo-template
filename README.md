@@ -10,6 +10,9 @@ so nothing standard gets forgotten.
   reopened / transferred issue to the org Project board
   ([#1](https://github.com/orgs/Vev-software/projects/1)). This is the piece that
   is easy to forget when scaffolding a repo by hand.
+- **`.github/workflows/sync-project-status.yml`** — keeps the Project item's
+  `Status` field aligned with issue lifecycle (`opened`, `reopened`,
+  `transferred`, `closed`) so the Project can stay the operative overview.
 - **`.gitignore`** — sensible defaults.
 - **`LICENSE.PLACEHOLDER`** — a deliberate reminder that the repo is **unlicensed
   until you add one**. It is intentionally *not* a real `LICENSE`, so a generated
@@ -25,4 +28,5 @@ so nothing standard gets forgotten.
    (Settings → Secrets and variables → Actions). It is org-wide, so normally it
    already is — the workflow needs it because the default `GITHUB_TOKEN` cannot
    write to Projects v2.
-4. Open a throwaway issue and confirm it lands on the board, then close it.
+4. Open a throwaway issue and confirm it lands on the board.
+5. Close and reopen it once to confirm the Project `Status` field updates as expected.
