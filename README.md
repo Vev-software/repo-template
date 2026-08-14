@@ -14,6 +14,13 @@ so nothing standard gets forgotten.
   `Status` field aligned with issue lifecycle (`opened`, `reopened`,
   `transferred`, `closed`) and sets `Product` from the repo name (`atlas-*` →
   `Atlas`, `portic-*` → `Portic`) so the Project can stay the operative overview.
+- **`AGENTS.md`** — repo-local guardrails for public disclosure, pointing back to
+  the central engineering policy.
+- **`.github/PULL_REQUEST_TEMPLATE.md` + `.github/ISSUE_TEMPLATE/`** — public-safe
+  authoring prompts for PRs and issues.
+- **`.github/workflows/public-disclosure-guard.yml`** — blocks PRs that introduce
+  known private-topology / licence-control terms into PR text or public docs.
+- **`CODEOWNERS`** — baseline reviewers for docs, templates and workflows.
 - **`.gitignore`** — sensible defaults.
 - **`LICENSE.PLACEHOLDER`** — a deliberate reminder that the repo is **unlicensed
   until you add one**. It is intentionally *not* a real `LICENSE`, so a generated

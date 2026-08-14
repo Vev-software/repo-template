@@ -1,0 +1,8 @@
+# CODEOWNERS — template repo guardrails
+
+*                               @Vev-software/owners
+/README.md                      @Vev-software/owners @Vev-software/architecture
+/AGENTS.md                      @Vev-software/owners @Vev-software/architecture
+/.github/PULL_REQUEST_TEMPLATE.md @Vev-software/owners @Vev-software/security
+/.github/ISSUE_TEMPLATE/        @Vev-software/owners @Vev-software/security
+/.github/workflows/             @Vev-software/release-engineering
