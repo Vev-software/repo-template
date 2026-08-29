@@ -32,9 +32,11 @@ so nothing standard gets forgotten.
 2. **Add a licence.** Follow the TODO in `LICENSE.PLACEHOLDER`: pick the licence
    from the matrix (`02 §3` / new-repository-checklist §1), add it as `LICENSE`,
    then delete `LICENSE.PLACEHOLDER`.
-3. Confirm the org secret **`ADD_TO_PROJECT_PAT`** is available to the repo
-   (Settings → Secrets and variables → Actions). It is org-wide, so normally it
-   already is — the workflow needs it because the default `GITHUB_TOKEN` cannot
-   write to Projects v2.
+3. Configure **`ADD_TO_PROJECT_PAT`** (classic PAT with `project` + `repo` scopes)
+   in Settings → Secrets and variables → Actions. The workflow needs it because the
+   default `GITHUB_TOKEN` cannot write to Projects v2. On GitHub Free, organisation
+   secrets are only available to public repositories, so PRIVATE or INTERNAL repos
+   must define this as a repository secret even if an organisation secret of the same
+   name exists; the repository secret overrides it.
 4. Open a throwaway issue and confirm it lands on the board.
 5. Close and reopen it once to confirm the Project `Status` field updates as expected.
